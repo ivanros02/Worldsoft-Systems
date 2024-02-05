@@ -114,7 +114,6 @@ nav ul li a {
     align-items: center;
     border-radius: 50%;
     transition: all 300ms;
-    display: none;
 }
 
 .btn__menu:hover {
@@ -619,14 +618,11 @@ footer {
 }
 
 @media screen and (max-width: 760px) {
+
     .container__nav {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .btn__menu {
-        display: flex;
     }
 
     nav {
@@ -635,30 +631,26 @@ footer {
         align-items: center;
         position: fixed;
         bottom: 100%;
-        /* Cambiado a bottom para que aparezca hacia abajo */
         left: 50%;
-        /* Centra el menú horizontalmente */
         transform: translateX(-50%);
-        /* Ajusta para centrar horizontalmente */
         width: 100%;
         background: rgba(44, 124, 245, 0.9);
         padding: 20px;
         z-index: 101;
         transition: bottom 0.3s;
-        /* Agregado para un efecto de transición suave */
         visibility: hidden;
-        /* Oculta el menú inicialmente */
         opacity: 0;
-        /* Establece la opacidad inicial a 0 */
         color: #fff;
     }
-
+    
     .move_nav {
         bottom: 0;
         visibility: visible;
-        /* Hace visible el menú al activar la clase .move_nav */
         opacity: 1;
-        /* Establece la opacidad a 1 */
+    }
+    
+    .nav_mod {
+        display: none; /* Add this line to hide the nav_mod on smaller screens */
     }
 
     nav ul {
