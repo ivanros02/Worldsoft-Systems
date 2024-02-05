@@ -114,6 +114,7 @@ nav ul li a {
     align-items: center;
     border-radius: 50%;
     transition: all 300ms;
+    display: none;
 }
 
 .btn__menu:hover {
@@ -623,6 +624,10 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .btn__menu{
+        display: flex;
     }
 
     nav {
