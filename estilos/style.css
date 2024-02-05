@@ -97,6 +97,16 @@ nav ul li a {
     color: white;
 }
 
+
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 760px) {
+    .nav_fixed {
+        position: fixed;
+    }
+}
+
+
 .select {
     background: var(--blue);
     padding: 10px 30px;
@@ -603,7 +613,7 @@ footer {
     }
 
     25% {
-        transform: translateY(-10px);
+        transform: translateY(-9px);
     }
 
     100% {
