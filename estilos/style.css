@@ -15,11 +15,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.container_all {
-    position: relative;
-    right: 0;
-    transition: all 300ms;
-    font-family: 'Poppins', sans-serif;
+#Inicio {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/empresas_pagina.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 
@@ -140,70 +139,9 @@ nav ul li a {
     padding-top: 100px;
     position: relative;
     overflow: hidden;
+    
 }
 
-/*WAVE INICIO*/
-
-.bg_color {
-    width: 100%;
-    height: 70%;
-    background: #1465bb;
-    position: absolute;
-    top: 0;
-}
-
-.wave {
-    width: 6000px;
-    height: 100%;
-    position: absolute;
-    top: 150px;
-    left: 0;
-    background-image: url(../img/wd1.svg);
-    background-position: bottom;
-}
-
-.w1 {
-    animation: w1 7s linear infinite;
-}
-
-.w2 {
-    animation: w2 7s linear -.125s infinite, desplazamiento 7s ease -.125s infinite;
-    opacity: 0.5;
-}
-
-@keyframes w1 {
-    0% {
-        margin-left: 0;
-    }
-
-    100% {
-        margin-left: -1600px;
-    }
-}
-
-@keyframes w2 {
-    0% {
-        margin-left: 0;
-    }
-
-    100% {
-        margin-left: -1600px;
-    }
-}
-
-@keyframes desplazamiento {
-
-    0%,
-    100% {
-        transform: translateY(-25px);
-    }
-
-    50% {
-        transform: translateY(10px);
-    }
-}
-
-/*WAVE FINAL*/
 
 .container__cover {
     max-width: 1200px;
@@ -487,7 +425,6 @@ footer {
     padding: 50px 0px;
     font-family: 'Nunito', sans-serif;
     background-color: var(--color-esqueleto);
-    background-image: url("../img/background-footer.svg");
     background-size: cover;
     /*webkit-mask-image: url("../Images/background-footer.svg");
     mask-image: url("../Images/background-footer.svg");
@@ -621,12 +558,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 920px) {
 
-    .container__vector img {
-        width: 500px;
-    }
-}
 
 @media screen and (max-width: 760px) {
 
@@ -689,10 +621,6 @@ footer {
         bottom: 0;
     }
 
-    .container__vector img {
-        transform: scale(0);
-        animation: none;
-    }
 }
 
 /* Estilos para hacerlo responsive */
