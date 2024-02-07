@@ -16,7 +16,7 @@
 }
 
 #Inicio {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/empresas_pagina.jpg");
+    background-image: linear-gradient(rgba(0, 5, 27, 0.815), rgba(1, 0, 37, 0.5)), url("../img/home.jpg");
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -172,7 +172,7 @@ nav ul li a {
 .cover h2 {
     font-size: 3.5rem;
     font-weight: 900;
-    color: var(--blue);
+    color: #1d89e7;
     margin-top: -30px;
 }
 
