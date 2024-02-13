@@ -29,3 +29,37 @@ window.addEventListener("resize", function() {
         nav.classList.remove('move_nav');
     }
 });
+
+ // Detectar cuando la sección esté en el área visible
+ const nosotrosSection = document.querySelector('.nosotros');
+ const observer = new IntersectionObserver(entries => {
+     entries.forEach(entry => {
+         if (entry.isIntersecting) {
+             // Si la sección está en el área visible, agregar la clase de animación
+             entry.target.querySelector('h1').classList.add('animate__backInLeft');
+         } else {
+             // Si la sección no está en el área visible, quitar la clase de animación
+             entry.target.querySelector('h1').classList.remove('animate__backInLeft');
+         }
+     });
+ });
+
+ // Observar la sección
+ observer.observe(nosotrosSection);
+
+ // Detectar cuando la sección esté en el área visible
+ const infoSection = document.querySelector('.info');
+ const observerInfo = new IntersectionObserver(entries => {
+     entries.forEach(entry => {
+         if (entry.isIntersecting) {
+             // Si la sección está en el área visible, agregar la clase de animación
+             entry.target.querySelector('h1').classList.add('animate__backInLeft');
+         } else {
+             // Si la sección no está en el área visible, quitar la clase de animación
+             entry.target.querySelector('h1').classList.remove('animate__backInLeft');
+         }
+     });
+ });
+
+ // Observar la sección
+ observerInfo.observe(infoSection);

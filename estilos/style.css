@@ -245,33 +245,6 @@ nav ul li a {
     margin-bottom: 15px;
 }
 
-.wrapper {
-    display: grid;
-    place-items: center;
-}
-
-.typing-demo {
-    width: 8ch;
-    animation: typing 2s steps(8), blink .2s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--blue);
-}
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent
-    }
-}
 
 
 
@@ -299,6 +272,12 @@ nav ul li a {
     /* Color del texto, puedes ajustar según tu paleta de colores */
     margin-bottom: 20px;
     /* Espaciado inferior para separar el título de otros elementos */
+}
+
+.info h1 {
+    color: var(--blue);
+    font-size: 3rem !important;
+    font-weight: bold !important;
 }
 
 
